@@ -11,7 +11,7 @@ import Foundation
 class MockURLSession: URLSessionProtocol {
     private (set) var lastURL: NSURL?
 
-    func dataTaskWithURL(url: NSURL, completionHandler: DataTaskResult) -> NSURLSessionDataTask {
+    func dataTaskWithURL(url: NSURL, completionHandler: DataTaskResult) -> URLSessionDataTaskProtocol {
         lastURL = url
         return NSURLSessionDataTask()
     }
