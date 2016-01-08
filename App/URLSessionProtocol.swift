@@ -13,3 +13,5 @@ typealias DataTaskResult = (NSData?, NSURLResponse?, NSError?) -> Void
 protocol URLSessionProtocol {
     func dataTaskWithURL(url: NSURL, completionHandler: DataTaskResult) -> NSURLSessionDataTask
 }
+
+extension NSURLSession: URLSessionProtocol { }
