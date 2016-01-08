@@ -17,6 +17,7 @@
 		8473F5E91C40784E00A22751 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8473F5E71C40784900A22751 /* URLSessionProtocol.swift */; };
 		8473F5EB1C407A5D00A22751 /* URLSessionDataTaskProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8473F5EA1C407A5D00A22751 /* URLSessionDataTaskProtocol.swift */; };
 		8473F5EC1C407B1E00A22751 /* URLSessionDataTaskProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8473F5EA1C407A5D00A22751 /* URLSessionDataTaskProtocol.swift */; };
+		8473F5EF1C407BB200A22751 /* MockURLSessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8473F5ED1C407BAF00A22751 /* MockURLSessionDataTask.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		8473F5E41C40780900A22751 /* MockURLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
 		8473F5E71C40784900A22751 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
 		8473F5EA1C407A5D00A22751 /* URLSessionDataTaskProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskProtocol.swift; sourceTree = "<group>"; };
+		8473F5ED1C407BAF00A22751 /* MockURLSessionDataTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockURLSessionDataTask.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				8473F5E41C40780900A22751 /* MockURLSession.swift */,
+				8473F5ED1C407BAF00A22751 /* MockURLSessionDataTask.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				8473F5E91C40784E00A22751 /* URLSessionProtocol.swift in Sources */,
 				8473F5E61C40780C00A22751 /* MockURLSession.swift in Sources */,
 				8473F5E11C4077AF00A22751 /* HTTPClient.swift in Sources */,
+				8473F5EF1C407BB200A22751 /* MockURLSessionDataTask.swift in Sources */,
 				84001A671C3FE840009DED86 /* HTTPClientTests.swift in Sources */,
 				8473F5EC1C407B1E00A22751 /* URLSessionDataTaskProtocol.swift in Sources */,
 			);
