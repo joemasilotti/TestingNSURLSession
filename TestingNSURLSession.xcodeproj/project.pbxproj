@@ -12,6 +12,8 @@
 		84001A671C3FE840009DED86 /* HTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84001A661C3FE840009DED86 /* HTTPClientTests.swift */; };
 		84001A701C3FE932009DED86 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84001A6F1C3FE932009DED86 /* HTTPClient.swift */; };
 		8473F5E01C40778A00A22751 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84001A6F1C3FE932009DED86 /* HTTPClient.swift */; };
+		8473F5E81C40784900A22751 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8473F5E71C40784900A22751 /* URLSessionProtocol.swift */; };
+		8473F5E91C40784E00A22751 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8473F5E71C40784900A22751 /* URLSessionProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +34,7 @@
 		84001A661C3FE840009DED86 /* HTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientTests.swift; sourceTree = "<group>"; };
 		84001A681C3FE840009DED86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84001A6F1C3FE932009DED86 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		8473F5E71C40784900A22751 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,7 @@
 				84001A6F1C3FE932009DED86 /* HTTPClient.swift */,
 				84001A5C1C3FE840009DED86 /* Info.plist */,
 				84001A5A1C3FE840009DED86 /* TestingNSURLSession.h */,
+				8473F5E71C40784900A22751 /* URLSessionProtocol.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -198,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8473F5E81C40784900A22751 /* URLSessionProtocol.swift in Sources */,
 				84001A701C3FE932009DED86 /* HTTPClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -207,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8473F5E01C40778A00A22751 /* HTTPClient.swift in Sources */,
+				8473F5E91C40784E00A22751 /* URLSessionProtocol.swift in Sources */,
 				84001A671C3FE840009DED86 /* HTTPClientTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
