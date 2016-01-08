@@ -23,4 +23,13 @@ class HTTPClientTests: XCTestCase {
 
         XCTAssert(session.lastURL === url)
     }
+
+    func test_GET_StartsTheRequest() {
+        let dataTask = MockURLSessionDataTask()
+        session.nextDataTask = dataTask
+
+        subject.get(NSURL()) { (_, _) -> Void in }
+
+        XCTAssert(dataTask.resumeWasCalled)
+    }
 }
