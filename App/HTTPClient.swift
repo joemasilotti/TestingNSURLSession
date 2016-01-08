@@ -8,6 +8,8 @@
 
 import Foundation
 
+typealias DataResult = (NSData?, ErrorType?) -> Void
+
 class HTTPClient {
     private let session: URLSessionProtocol
 
@@ -15,4 +17,6 @@ class HTTPClient {
         self.session = session
     }
 
+    func get(url: NSURL, completion: DataResult) {
+    }
 }
