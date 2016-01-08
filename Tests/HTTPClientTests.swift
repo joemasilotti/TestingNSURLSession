@@ -9,7 +9,18 @@
 import XCTest
 
 class HTTPClientTests: XCTestCase {
-    func test_Exists() {
-        XCTAssertNotNil(HTTPClient())
+    var subject: HTTPClient!
+    let session = MockURLSession()
+
+    override func setUp() {
+        super.setUp()
+        subject = HTTPClient(session: session)
+    }
+
+    func test_GET_RequestsTheURL() {
+        let url = NSURL(string: "http://masilotti.com")!
+        subject.get(url) { (_, _) -> Void in }
+
+        XCTAssert(session.lastURL === url)
     }
 }
