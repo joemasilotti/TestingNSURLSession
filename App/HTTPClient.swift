@@ -9,5 +9,10 @@
 import Foundation
 
 class HTTPClient {
+    private let session: URLSessionProtocol
+
+    init(session: URLSessionProtocol = NSURLSession()) {
+        self.session = session
+    }
 
 }
