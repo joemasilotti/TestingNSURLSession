@@ -12,6 +12,7 @@
 		84001A671C3FE840009DED86 /* HTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84001A661C3FE840009DED86 /* HTTPClientTests.swift */; };
 		84001A701C3FE932009DED86 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84001A6F1C3FE932009DED86 /* HTTPClient.swift */; };
 		8473F5E01C40778A00A22751 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84001A6F1C3FE932009DED86 /* HTTPClient.swift */; };
+		8473F5E61C40780C00A22751 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8473F5E41C40780900A22751 /* MockURLSession.swift */; };
 		8473F5E81C40784900A22751 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8473F5E71C40784900A22751 /* URLSessionProtocol.swift */; };
 		8473F5E91C40784E00A22751 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8473F5E71C40784900A22751 /* URLSessionProtocol.swift */; };
 /* End PBXBuildFile section */
@@ -34,6 +35,7 @@
 		84001A661C3FE840009DED86 /* HTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientTests.swift; sourceTree = "<group>"; };
 		84001A681C3FE840009DED86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84001A6F1C3FE932009DED86 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		8473F5E41C40780900A22751 /* MockURLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
 		8473F5E71C40784900A22751 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,10 +90,19 @@
 		84001A651C3FE840009DED86 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				8473F5E31C4077E600A22751 /* Mocks */,
 				84001A661C3FE840009DED86 /* HTTPClientTests.swift */,
 				84001A681C3FE840009DED86 /* Info.plist */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		8473F5E31C4077E600A22751 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				8473F5E41C40780900A22751 /* MockURLSession.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +224,7 @@
 			files = (
 				8473F5E01C40778A00A22751 /* HTTPClient.swift in Sources */,
 				8473F5E91C40784E00A22751 /* URLSessionProtocol.swift in Sources */,
+				8473F5E61C40780C00A22751 /* MockURLSession.swift in Sources */,
 				84001A671C3FE840009DED86 /* HTTPClientTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
