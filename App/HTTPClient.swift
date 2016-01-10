@@ -8,7 +8,7 @@
 
 import Foundation
 
-typealias DataResult = (NSData?, ErrorType?) -> Void
+typealias HTTPResult = (NSData?, ErrorType?) -> Void
 
 class HTTPClient {
     private let session: URLSessionProtocol
@@ -17,7 +17,7 @@ class HTTPClient {
         self.session = session
     }
 
-    func get(url: NSURL, completion: DataResult) {
+    func get(url: NSURL, completion: HTTPResult) {
         let task = session.dataTaskWithURL(url) { (_, _, _) -> Void in }
         task.resume()
     }
