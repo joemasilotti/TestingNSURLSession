@@ -1,5 +1,5 @@
 //
-//  HTTPClientTests.swift
+//  HTTPClientTests_Part1.swift
 //  TestingNSURLSessionTests
 //
 //  Created by Joe Masilotti on 1/8/16.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class HTTPClientTests: XCTestCase {
+class HTTPClientTests_Part1: XCTestCase {
     var subject: HTTPClient!
     let session = MockURLSession()
 
