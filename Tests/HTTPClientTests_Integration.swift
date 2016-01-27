@@ -18,13 +18,16 @@ class HTTPClientTests_Integration: XCTestCase {
 
     func test_GET_ReturnsData() {
         let url = NSURL(string: "http://masilotti.com")!
+        let expectation = expectationWithDescription("Wait for \(url) to load.")
         var data: NSData?
 
         subject.get(url) { (theData, error) -> Void in
             data = theData
             XCTAssertNil(error)
+            expectation.fulfill()
         }
 
+        waitForExpectationsWithTimeout(5, handler: nil)
         XCTAssertNotNil(data)
     }
 }
