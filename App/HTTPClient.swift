@@ -13,7 +13,7 @@ typealias HTTPResult = (NSData?, ErrorType?) -> Void
 class HTTPClient {
     private let session: URLSessionProtocol
 
-    init(session: URLSessionProtocol = NSURLSession.sharedSession()) {
+    init(session: URLSessionProtocol = NSURLSession.defaultSession()) {
         self.session = session
     }
 
