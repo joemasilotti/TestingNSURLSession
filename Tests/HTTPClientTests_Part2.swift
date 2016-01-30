@@ -17,9 +17,10 @@ class HTTPClientTests_Part2: XCTestCase {
         subject = HTTPClient(session: session)
     }
 
-    func test_GET_WithResponseData_ReturnsTheData() {
+    func test_GET_WithResponseData_AndA200StatusCode_ReturnsTheData() {
         let expectedData = "{}".dataUsingEncoding(NSUTF8StringEncoding)
         session.nextData = expectedData
+        session.nextResponse = NSHTTPURLResponse(URL: NSURL(), statusCode: 200, HTTPVersion: nil, headerFields: nil)
 
         var actualData: NSData?
         subject.get(NSURL()) { (data, _) -> Void in
