@@ -52,4 +52,28 @@ class HTTPClientTests_Part2: XCTestCase {
 
         XCTAssertNotNil(error)
     }
+
+    func test_GET_WithAStatusCodeLessThan200_ReturnsAnError() {
+        session.nextResponse = NSHTTPURLResponse(URL: NSURL(), statusCode: 199, HTTPVersion: nil, headerFields: nil)
+
+        var error: ErrorType?
+        subject.get(NSURL()) { (data, theError) -> Void in
+            XCTAssertNil(data)
+            error = theError
+        }
+
+        XCTAssertNotNil(error)
+    }
+
+    func test_GET_WithAStatusCodeGreaterThan299_ReturnsAnError() {
+        session.nextResponse = NSHTTPURLResponse(URL: NSURL(), statusCode: 300, HTTPVersion: nil, headerFields: nil)
+
+        var error: ErrorType?
+        subject.get(NSURL()) { (data, theError) -> Void in
+            XCTAssertNil(data)
+            error = theError
+        }
+
+        XCTAssertNotNil(error)
+    }
 }
