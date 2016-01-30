@@ -21,8 +21,10 @@ class HTTPClient {
         let task = session.dataTaskWithURL(url) { (data, response, error) -> Void in
             if let _ = error {
                 completion(nil, Error.NetworkError)
-            } else {
+            } else if let response = response as? NSHTTPURLResponse where 200...299 ~= response.statusCode {
                 completion(data, nil)
+            } else {
+                completion(nil, Error.NetworkError)
             }
         }
         task.resume()
