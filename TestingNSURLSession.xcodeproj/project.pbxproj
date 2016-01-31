@@ -19,12 +19,12 @@
 		8473F5EB1C407A5D00A22751 /* URLSessionDataTaskProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8473F5EA1C407A5D00A22751 /* URLSessionDataTaskProtocol.swift */; };
 		8473F5EC1C407B1E00A22751 /* URLSessionDataTaskProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8473F5EA1C407A5D00A22751 /* URLSessionDataTaskProtocol.swift */; };
 		8473F5EF1C407BB200A22751 /* MockURLSessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8473F5ED1C407BAF00A22751 /* MockURLSessionDataTask.swift */; };
-		8480191A1C58F28700ABC0D9 /* HTTPClientTests_Integration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848019191C58F28700ABC0D9 /* HTTPClientTests_Integration.swift */; };
 		848018ED1C563F7B00ABC0D9 /* HTTPClientTests_Part2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848018EC1C563F7B00ABC0D9 /* HTTPClientTests_Part2.swift */; };
 		848018EF1C5645DB00ABC0D9 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848018EE1C5645DB00ABC0D9 /* Error.swift */; };
 		848018F01C56460D00ABC0D9 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848018EE1C5645DB00ABC0D9 /* Error.swift */; };
 		848019171C58F1F200ABC0D9 /* NSURLSession+MainQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848019161C58F1F200ABC0D9 /* NSURLSession+MainQueue.swift */; };
 		848019181C58F23100ABC0D9 /* NSURLSession+MainQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848019161C58F1F200ABC0D9 /* NSURLSession+MainQueue.swift */; };
+		8480191A1C58F28700ABC0D9 /* HTTPClientTests_Integration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848019191C58F28700ABC0D9 /* HTTPClientTests_Integration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,10 +50,10 @@
 		8473F5E71C40784900A22751 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
 		8473F5EA1C407A5D00A22751 /* URLSessionDataTaskProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskProtocol.swift; sourceTree = "<group>"; };
 		8473F5ED1C407BAF00A22751 /* MockURLSessionDataTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockURLSessionDataTask.swift; sourceTree = "<group>"; };
-		848019191C58F28700ABC0D9 /* HTTPClientTests_Integration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClientTests_Integration.swift; sourceTree = "<group>"; };
 		848018EC1C563F7B00ABC0D9 /* HTTPClientTests_Part2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClientTests_Part2.swift; sourceTree = "<group>"; };
 		848018EE1C5645DB00ABC0D9 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		848019161C58F1F200ABC0D9 /* NSURLSession+MainQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSURLSession+MainQueue.swift"; sourceTree = "<group>"; };
+		848019191C58F28700ABC0D9 /* HTTPClientTests_Integration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClientTests_Integration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
