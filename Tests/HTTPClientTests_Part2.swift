@@ -20,7 +20,7 @@ class HTTPClientTests_Part2: XCTestCase {
     func test_GET_WithResponseData_AndA200StatusCode_ReturnsTheData() {
         let expectedData = "{}".dataUsingEncoding(NSUTF8StringEncoding)
         session.nextData = expectedData
-        session.nextResponse = NSHTTPURLResponse(URL: NSURL(), statusCode: 200, HTTPVersion: nil, headerFields: nil)
+        session.nextResponse = NSHTTPURLResponse(statusCode: 200)
 
         var actualData: NSData?
         subject.get(NSURL()) { (data, _) -> Void in
@@ -55,7 +55,7 @@ class HTTPClientTests_Part2: XCTestCase {
     }
 
     func test_GET_WithAStatusCodeLessThan200_ReturnsAnError() {
-        session.nextResponse = NSHTTPURLResponse(URL: NSURL(), statusCode: 199, HTTPVersion: nil, headerFields: nil)
+        session.nextResponse = NSHTTPURLResponse(statusCode: 199)
 
         var error: ErrorType?
         subject.get(NSURL()) { (data, theError) -> Void in
@@ -67,7 +67,7 @@ class HTTPClientTests_Part2: XCTestCase {
     }
 
     func test_GET_WithAStatusCodeGreaterThan299_ReturnsAnError() {
-        session.nextResponse = NSHTTPURLResponse(URL: NSURL(), statusCode: 300, HTTPVersion: nil, headerFields: nil)
+        session.nextResponse = NSHTTPURLResponse(statusCode: 300)
 
         var error: ErrorType?
         subject.get(NSURL()) { (data, theError) -> Void in
