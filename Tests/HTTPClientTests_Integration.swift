@@ -1,12 +1,13 @@
 //
 //  HTTPClientTests_Integration.swift
-//  TestingNSURLSession
+//  TestingNSURLSessionTests
 //
 //  Created by Joe Masilotti on 1/27/16.
 //  Copyright © 2016 Masilotti.com. All rights reserved.
 //
 
 import XCTest
+@testable import TestHost
 
 class HTTPClientTests_Integration: XCTestCase {
     var subject: HTTPClient!
