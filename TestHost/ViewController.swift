@@ -9,4 +9,25 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var postCountLabel: UILabel!
+
+    let httpClient = HTTPClient()
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        fetchPostCount()
+    }
+
+    private func fetchPostCount() {
+        let url = NSURL(string: "http://masilotti.com/api/posts.json")!
+        httpClient.get(url) { (data, error) -> Void in
+            if let data = data {
+                guard let
+                    json = try? NSJSONSerialization.JSONObjectWithData(data, options: []),
+                    count = json["posts"] as? Int
+                    else { return }
+                self.postCountLabel.text = "\(count)"
+            }
+        }
+    }
 }

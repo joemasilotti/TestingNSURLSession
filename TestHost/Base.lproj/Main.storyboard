@@ -18,19 +18,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, World" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXb-O5-fWd">
-                                <rect key="frame" x="254" y="28" width="93" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Posts:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXb-O5-fWd">
+                                <rect key="frame" x="20" y="28" width="48" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="78Q-N5-yGs" userLabel="Post Count">
+                                <rect key="frame" x="76" y="27" width="10" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="78Q-N5-yGs" firstAttribute="baseline" secondItem="jXb-O5-fWd" secondAttribute="baseline" id="C02-Xo-9hs"/>
+                            <constraint firstItem="78Q-N5-yGs" firstAttribute="leading" secondItem="jXb-O5-fWd" secondAttribute="trailing" constant="8" id="DKJ-Eu-Vdr"/>
                             <constraint firstItem="jXb-O5-fWd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="28" id="Diu-04-7bX"/>
-                            <constraint firstItem="jXb-O5-fWd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="p3O-v8-DE2"/>
+                            <constraint firstItem="jXb-O5-fWd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="q7f-vY-4Za"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="postCountLabel" destination="78Q-N5-yGs" id="VTd-PQ-5B5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

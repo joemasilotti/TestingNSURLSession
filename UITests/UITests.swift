@@ -17,4 +17,21 @@ class UITests: XCTestCase {
 
         app.launch()
     }
+
+    func test_DisplaysPostCount() {
+        let postCountLabel = app.staticTexts["17"]
+        waitForElementToAppear(postCountLabel)
+    }
+
+    private func waitForElementToAppear(element: XCUIElement, file: String = __FILE__, line: UInt = __LINE__) {
+        let existsPredicate = NSPredicate(format: "exists == true")
+        expectationForPredicate(existsPredicate, evaluatedWithObject: element, handler: nil)
+
+        waitForExpectationsWithTimeout(5) { (error) -> Void in
+            if (error != nil) {
+                let message = "Failed to find \(element) after 5 seconds."
+                self.recordFailureWithDescription(message, inFile: file, atLine: line, expected: true)
+            }
+        }
+    }
 }
