@@ -18,7 +18,7 @@ class HTTPClientTests_Integration: XCTestCase {
     }
 
     func test_GET_ReturnsData() {
-        let url = NSURL(string: "http://masilotti.com")!
+        let url = NSURL(string: "http://masilotti.com/api/posts.json")!
         let expectation = expectationWithDescription("Wait for \(url) to load.")
         var data: NSData?
 
