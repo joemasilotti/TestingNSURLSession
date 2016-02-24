@@ -30,7 +30,13 @@ class ViewController: UIViewController {
             data = data,
             json = try? NSJSONSerialization.JSONObjectWithData(data, options: []),
             count = json["posts"] as? Int
-            else { return }
+            else { self.displayErrorAlert(); return }
         self.postCountLabel.text = "\(count)"
+    }
+
+    private func displayErrorAlert() {
+        let alertController = UIAlertController(title: nil, message: "Something went wrong.", preferredStyle: .Alert)
+        alertController.addAction(UIAlertAction(title: "Dismiss", style: .Default, handler: nil))
+        self.presentViewController(alertController, animated: true, completion: nil)
     }
 }
