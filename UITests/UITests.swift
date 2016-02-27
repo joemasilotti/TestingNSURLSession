@@ -10,16 +10,19 @@ import XCTest
 
 class UITests: XCTestCase {
     let app = XCUIApplication()
+    let postCount = "33"
 
     override func setUp() {
         super.setUp()
         continueAfterFailure = false
 
+        app.launchArguments += ["UI-TESTING"]
+        app.launchEnvironment["http://masilotti.com/api/posts.json"] = "{\"posts\": \(postCount)}"
         app.launch()
     }
 
     func test_DisplaysPostCount() {
-        let postCountLabel = app.staticTexts["17"]
+        let postCountLabel = app.staticTexts[postCount]
         waitForElementToAppear(postCountLabel)
     }
 
