@@ -24,6 +24,7 @@
 		849FEC061C7DC81E008804F4 /* URLSessionDataTaskProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8473F5EA1C407A5D00A22751 /* URLSessionDataTaskProtocol.swift */; };
 		849FEC071C7DC822008804F4 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8473F5E71C40784900A22751 /* URLSessionProtocol.swift */; };
 		849FEC181C7DCAB4008804F4 /* HTTPClientTests_Integration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848019191C58F28700ABC0D9 /* HTTPClientTests_Integration.swift */; };
+		84BD8FA91C7E765D006AF50F /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BD8FA81C7E765D006AF50F /* Configuration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		849FEBFD1C7DC7B1008804F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		849FEBFF1C7DC7B1008804F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		849FEC0E1C7DCAAC008804F4 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84BD8FA81C7E765D006AF50F /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 			children = (
 				849FEBF31C7DC7B1008804F4 /* AppDelegate.swift */,
 				849FEBFA1C7DC7B1008804F4 /* Assets.xcassets */,
+				84BD8FA81C7E765D006AF50F /* Configuration.swift */,
 				848018EE1C5645DB00ABC0D9 /* Error.swift */,
 				84001A6F1C3FE932009DED86 /* HTTPClient.swift */,
 				849FEBFF1C7DC7B1008804F4 /* Info.plist */,
@@ -304,6 +307,7 @@
 			files = (
 				849FEC071C7DC822008804F4 /* URLSessionProtocol.swift in Sources */,
 				849FEBF61C7DC7B1008804F4 /* ViewController.swift in Sources */,
+				84BD8FA91C7E765D006AF50F /* Configuration.swift in Sources */,
 				849FEC031C7DC807008804F4 /* Error.swift in Sources */,
 				849FEC061C7DC81E008804F4 /* URLSessionDataTaskProtocol.swift in Sources */,
 				849FEC041C7DC80A008804F4 /* HTTPClient.swift in Sources */,
