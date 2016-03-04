@@ -1,6 +1,6 @@
 //
 //  NSHTTPURLResponse+StatusCode.swift
-//  TestingNSURLSession
+//  TestingNSURLSessionTests
 //
 //  Created by Joe Masilotti on 1/31/16.
 //  Copyright © 2016 Masilotti.com. All rights reserved.

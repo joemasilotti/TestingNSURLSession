@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import TestHost
 
 class HTTPClientTests_Part1: XCTestCase {
     var subject: HTTPClient!

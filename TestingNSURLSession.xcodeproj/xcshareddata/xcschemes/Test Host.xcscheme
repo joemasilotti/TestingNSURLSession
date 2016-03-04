@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "84001A571C3FE840009DED86"
-               BuildableName = "TestingNSURLSession.framework"
-               BlueprintName = "TestingNSURLSession"
+               BlueprintIdentifier = "849FEBF01C7DC7B0008804F4"
+               BuildableName = "Test Host.app"
+               BlueprintName = "Test Host"
                ReferencedContainer = "container:TestingNSURLSession.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,19 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "84001A601C3FE840009DED86"
-               BuildableName = "TestingNSURLSessionTests.xctest"
-               BlueprintName = "TestingNSURLSessionTests"
+               BlueprintIdentifier = "849FEC0D1C7DCAAC008804F4"
+               BuildableName = "Tests.xctest"
+               BlueprintName = "Tests"
+               ReferencedContainer = "container:TestingNSURLSession.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "846FA4151C7DD5B9002C5A66"
+               BuildableName = "UITests.xctest"
+               BlueprintName = "UITests"
                ReferencedContainer = "container:TestingNSURLSession.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -42,9 +52,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "84001A571C3FE840009DED86"
-            BuildableName = "TestingNSURLSession.framework"
-            BlueprintName = "TestingNSURLSession"
+            BlueprintIdentifier = "849FEBF01C7DC7B0008804F4"
+            BuildableName = "Test Host.app"
+            BlueprintName = "Test Host"
             ReferencedContainer = "container:TestingNSURLSession.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -65,9 +75,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "84001A571C3FE840009DED86"
-            BuildableName = "TestingNSURLSession.framework"
-            BlueprintName = "TestingNSURLSession"
+            BlueprintIdentifier = "849FEBF01C7DC7B0008804F4"
+            BuildableName = "Test Host.app"
+            BlueprintName = "Test Host"
             ReferencedContainer = "container:TestingNSURLSession.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -84,9 +94,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "84001A571C3FE840009DED86"
-            BuildableName = "TestingNSURLSession.framework"
-            BlueprintName = "TestingNSURLSession"
+            BlueprintIdentifier = "849FEBF01C7DC7B0008804F4"
+            BuildableName = "Test Host.app"
+            BlueprintName = "Test Host"
             ReferencedContainer = "container:TestingNSURLSession.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
