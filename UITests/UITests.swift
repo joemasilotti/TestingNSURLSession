@@ -26,7 +26,7 @@ class UITests: XCTestCase {
         waitForElementToAppear(postCountLabel)
     }
 
-    private func waitForElementToAppear(element: XCUIElement, file: String = __FILE__, line: UInt = __LINE__) {
+    private func waitForElementToAppear(element: XCUIElement, file: String = #file, line: UInt = #line) {
         let existsPredicate = NSPredicate(format: "exists == true")
         expectationForPredicate(existsPredicate, evaluatedWithObject: element, handler: nil)
 
